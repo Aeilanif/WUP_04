@@ -74,12 +74,24 @@ par(mar = c(3, 8.7, 2, 2))
 plot(TukeyHSD(model1),las=2)
 ```
 
-This p-value is 0.000236. Because 0.000236<0.05 this means that we reject the $H_0$ .
+```{r}
+# Perform one-way ANOVA
+model <- aov(WORDSUM ~ DEGREE, data = GSS)
+
+# Performing Tukey's HSD test
+tukey_result <- TukeyHSD(model)
+
+# Viewing the test results
+tukey_result
+
+
+```
+
+This p-value is 0.000236. Because 0.000236<0.05 this means that we reject the $H_0$ .By conducting the Turkey HSD test, this shows us that LT High School and Graduate are the two degrees that are different from one another. In addition, High School is also different from Graduate.
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variables causes the other, or whether they perhaps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
-I conclude that there is a difference between the average score on the WORDSUM tests and levels of schooling DEGREE.  According to the anova output it shows us that there is not a significant difference in WORDSUM means across DEGREE levels.
-
+I conclude that there is a difference between the average score on the WORDSUM tests and levels of schooling DEGREE.  According to the anova output it shows us that there was no significant difference in WORDSUM means across DEGREE levels but the two different categories would be the LT High School graduate and the High School graduates since both of them don't run into the zero line. These two categories are the only two that would fall outside of that which we can see in the graph.  
 
