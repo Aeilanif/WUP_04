@@ -47,7 +47,7 @@ So we use the Numerical-Cat helper file.
 boxplot(WORDSUM~DEGREE,data=GSS)
 ```
 
-According to this boxplot, there is not really a big difference between the WORDSUM and DEGREE'S
+According to this graph, there are slight differences within the degree levels. 
 
 ### Numerical Descriptive Results
 
@@ -79,3 +79,5 @@ This p-value is 0.000236. Because 0.000236<0.05 this means that we reject the $H
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variables causes the other, or whether they perhaps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+
